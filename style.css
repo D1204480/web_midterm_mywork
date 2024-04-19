@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+
+.click-count {
+    text-align: center;
+}
+
+.img-gallary {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(173,216,230,0);
+
+
+}
+
+
+/* 當滑鼠移動到照片上時，添加藍色邊框 */
+.img-gallary:hover {
+    cursor: pointer;
+    background-color: rgb(173,216,230,1);
+
+
+}
+
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+
+@media (max-width: 900px) {
+    .column {
+        flex: 33%;
+        /*max-width: 33%;*/
+    }
+}
+
+
+@media (max-width: 700px) {
+    .column {
+        flex: 50%;
+        /*max-width: 50%;*/
+    }
+}
+
+
+/*畫面小於600px時, 圖片100%*/
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        /*max-width: 100%;*/
+    }
+}
+
+
+
